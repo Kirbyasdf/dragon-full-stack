@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const GenerationsEngine = require("./models/generation/engine.class.js");
 const dragonRouter = require("./api/routes/dragon.routes.js");
+const generationRouter = require("./api/routes/generation.routes.js");
 
 const app = express();
 app.use(bodyParser.json());
@@ -12,5 +13,6 @@ engine.start();
 app.locals.engine = engine; //allow the engines to become global in the global express app object, see app/api/routes/dragon for example
 
 app.use("/dragon", dragonRouter);
+app.use("/generation", generationRouter);
 
 module.exports = app;
