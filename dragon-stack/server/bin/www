@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+const app = require("../app/index.js");
+
+PORT = 4000;
+
+app.listen(PORT, () => console.log("GOOD TO GO ON PORT: " + PORT));
