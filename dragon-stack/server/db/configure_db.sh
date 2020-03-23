@@ -8,8 +8,9 @@
   echo "Configuring data: $db"
   dropdb -U node_user dragonstackdb
   createdb -U node_user dragonstackdb
-  psql -U node_user dragonstackdb < ./bin/sql/generation.sql
-  psql -U node_user dragonstackdb < ./bin/sql/dragon.sql
+  psql -U node_user dragonstackdb < ./db/sql/generation.sql
+  psql -U node_user dragonstackdb < ./db/sql/dragon.sql
+  psq -U node_user dragonstackdb < ./db/sql/traits.sql
   echo  "$db was configured"
 
 

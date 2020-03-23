@@ -11,7 +11,7 @@ router.get("/", async (req, res, next) => {
     dragon.dragonId = dragonId;
     res.json(dragon);
   } catch (err) {
-    console.error(err);
+    next(err);
   }
 });
 

@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
-    "configure": "./bin/configure_db.sh",
+    "configure": "./db/configure_db.sh",
     "configure-dev": "npm run configure && npm run dev"
   },
   "keywords": [],
