@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www",
+    "configure": "./bin/configure_db.sh",
+    "configure-dev": "npm run configure && npm run dev"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,7 @@
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "pg": "7.18.2"
   }
 }
