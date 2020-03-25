@@ -1,6 +1,7 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
-const GenerationsEngine = require("./models/generation/engine.class.js");
+const GenerationsEngine = require("./models/generation/engine.js");
 const dragonRouter = require("./api/routes/dragon.routes.js");
 const generationRouter = require("./api/routes/generation.routes.js");
 

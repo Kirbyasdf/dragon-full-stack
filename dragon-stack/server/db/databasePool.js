@@ -1,4 +1,5 @@
 require("dotenv").config();
+//^ for some reason I have to put this in here for bash calls...but the best place is at the top of your main index/app.js
 const { Pool } = require("pg");
 
 const pool = new Pool({
@@ -8,6 +9,5 @@ const pool = new Pool({
   password: process.env.DB_PASS,
   port: 5432
 });
-// console.log(pool);
 
 module.exports = pool;
